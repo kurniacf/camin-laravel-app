@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +13,13 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function(){
+    return view('supermarket.index');
 });
-Route::resource("/product", ProductController::class);
+
+/*Route::resource("/products", ProductsController::class);
+Route::get("/products/{id}", [ProductsController::class, 'show']);
+
+Route::get('/users', function () {
+    return 'Welcome to users page';
+});*/

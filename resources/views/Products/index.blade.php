@@ -3,19 +3,9 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-9">
-                <div class="card">
-                    <div class="card-header">
-                        <h2>Product Supermarket</h2>
-                    </div>
-                    <div class="card-body">
-                        <a href="{{ url('/product/create') }}" class="btn btn-success btn-sm" title="Add New Product">
-                            <i class="fa fa-plus" aria-hidden="true"></i> Add New
-                        </a>
-                        <br/>
-                        <br/>
-                        <div class="table-responsive">
-                            <table class="table">
+
+
+                            {{--<table class="table">
                                 <thead>
                                 <tr>
                                     <th>#</th>
@@ -46,12 +36,10 @@
                                     </tr>
                                 @endforeach
                                 </tbody>
-                            </table>
-                        </div>
+                            </table>--}}
+                            <h1>Products</h1>
+                            <p>{{ $products }}</p>
 
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 @endsection

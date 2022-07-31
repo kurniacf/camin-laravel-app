@@ -5,14 +5,33 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Products;
 
-class ProductController extends Controller
+class ProductsController extends Controller
 {
     public function index()
     {
-        $products = Products::all();
-        return view('products.index')->with('products', $products);
+        /*$products = Products::all();*/
+
+        $title = "Welcome to my Laravel";
+        $data = [
+            'productOne' => 'iPhone',
+            'productTwo' => 'Samsung'
+        ];
+
+        return view('products.index')->with('data', $data);
     }
 
+    public function show($name)
+    {
+        $data = [
+            'productOne' => 'iPhone',
+            'productTwo' => 'Samsung'
+        ];
+
+        return view('products.index', [
+            'products' => $data[$name] ?? 'Product ' . $name . ' does not exist'
+        ]);
+    }
+    /*
     public function create()
     {
         return view('products.create');
@@ -49,5 +68,5 @@ class ProductController extends Controller
     {
         Products::destroy($id);
         return redirect('product')->with('flash_message', 'product deleted!');
-    }
+    }*/
 }

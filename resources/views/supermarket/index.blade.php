@@ -10,7 +10,7 @@
             <div class="card">
                 <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
                      data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
+                    <img src="https://id.360buyimg.com/Indonesia/s880x0_/nHBfsgAAOAAAAAYAEXpBgAADEcY.jpg.dpg.webp"
                          class="w-100" alt="..."/>
                     <a href="#!">
                         <div class="mask">
@@ -25,13 +25,13 @@
                 </div>
                 <div class="card-body">
                     <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
+                        <h5 class="card-title mb-3"> Giordano Kemeja Pria</h5>
                     </a>
                     <a href="" class="text-reset">
-                        <p>Category</p>
+                        <p>Fashion</p>
                     </a>
                     <div class="clearfix text-center">
-                        <div class="pull-left price font-weight-bold">Rp25.000</div>
+                        <div class="pull-left price font-weight-bold">Rp629.000</div>
                         <a href="#" class="btn btn-success pull-right" role="button">Beli</a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
             <div class="card">
                 <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
                      data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(4).webp"
+                    <img src="https://img20.jd.id/babel/amZzL3Q3MC81OS8xMTgwNDc1Nzg0Ni82ODQwNy8yYzEwODg2Yi82MTNmMjE5ME5jNzQyNTE5OQ.jpg.webp"
                          class="w-100" />
                     <a href="#!">
                         <div class="mask">
@@ -57,10 +57,10 @@
                 </div>
                 <div class="card-body">
                     <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
+                        <h5 class="card-title mb-3">Martin Versa Tas Ransel TR14</h5>
                     </a>
                     <a href="" class="text-reset">
-                        <p>Category</p>
+                        <p>Olahraga & Lifestyle</p>
                     </a>
                     <h6 class="mb-3">$61.99</h6>
                 </div>

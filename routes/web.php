@@ -1,9 +1,8 @@
 <?php
 
-use App\Models\Products;
-use App\Models\User;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,36 +15,10 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function(){
-    $products = Products::all();
-    return view('supermarket.index', ['products' => $products]);
-});
+Route::get('/', [ProductsController::class, 'getIndex']);
 
-Route::get('/signup', function(){
-    $user = User::all();
-    return view('user.signup', ['user' => $user]);
-});
-
-Route::post('/signup', function(Request $request){
-    $this->validate($request, [
-        'email' => 'email|required|unique:users',
-        'password' => 'required|min:8',
-        'name' => 'required'
-    ]);
-
-    $user = new User([
-        'email' => $request->input('email'),
-        'password'=> bcrypt($request->input('password')),
-        'name' => $request->input('name')
-    ]);
-    $user->save();
-
-    return redirect()->route('product.index');
-});
-
-/*Route::resource("/products", ProductsController::class);
-Route::get("/products/{id}", [ProductsController::class, 'show']);
-
-Route::get('/users', function () {
-    return 'Welcome to users page';
-});*/
+Route::get('/signup', [UserController::class, 'getSignup']);
+Route::post('/signup', [UserController::class, 'postSignup']);
+Route::get('/login', [UserController::class, 'getLogin']);
+Route::post('/login', [UserController::class, 'postLogin']);
+Route::get('/user/profile', [UserController::class, 'getProfile']);

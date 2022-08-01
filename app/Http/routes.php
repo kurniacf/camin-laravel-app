@@ -15,3 +15,18 @@ Route::post('/signup', [
     'uses' => 'UserController@postSignup',
     'as' => 'user.signup'
 ]);
+
+Route::get('/login', [
+    'uses' => 'UserController@getLogin',
+    'as' => 'user.login'
+]);
+
+Route::post('/login', [
+    'uses' => 'UserController@postLogin',
+    'as' => 'user.login'
+]);
+
+Route::get('/user/profile', [
+    'uses' => 'UserController@getProfile',
+    'as' => 'user.profile'
+]);

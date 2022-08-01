@@ -230,7 +230,7 @@
             <a href="#" class="nav-item nav-link">Kontak Kami</a>
         </div>
         <div class="navbar-nav ml-auto action-buttons">
-            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Masuk</a>
+            <a href="{{ url('login') }}" class="nav-link dropdown-toggle mr-4">Masuk</a>
             <a href="{{ url('signup') }}" class="btn btn-primary sign-up-btn">Daftar</a>
         </div>
     </div>

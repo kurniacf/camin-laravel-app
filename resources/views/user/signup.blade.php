@@ -8,7 +8,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                             <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Daftar</p>
-                            <form class="mx-1 mx-md-4" action="{{URL('/signup')}}" method="post">
+                            <form class="mx-1 mx-md-4" action="{{url('signup')}}" method="post">
                                 <div class="d-flex flex-row align-items-center mb-4">
                                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                     <div class="form-outline flex-fill mb-0">
@@ -40,7 +40,9 @@
                                 </div>
 
                                 <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                    <button type="submit" class="btn btn-primary btn-lg">Buat Akun</button>
+                                    <a href="{{ url('user/profile') }}">
+                                        <button type="submit" class="btn btn-primary btn-lg">Buat Akun</button>
+                                    </a>
                                 </div>
                                 {{ csrf_field() }}
                             </form>

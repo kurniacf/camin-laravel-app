@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Products;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function(){
-    return view('supermarket.index');
+    $products = Products::all();
+    return view('supermarket.index', ['products' => $products]);
 });
 
 /*Route::resource("/products", ProductsController::class);

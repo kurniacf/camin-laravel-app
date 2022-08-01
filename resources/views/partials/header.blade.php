@@ -208,27 +208,26 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a href="#" class="navbar-brand">Keranjang<b>Pintar</b></a>
+    <a href="{{ url('/') }}" class="navbar-brand">Keranjang<b>Pintar</b></a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
     <!-- Collection of nav links, forms, and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
         <div class="navbar-nav">
-            <a href="#" class="nav-item nav-link">Home</a>
-            <a href="#" class="nav-item nav-link">About</a>
-            <div class="nav-item dropdown">
-                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Services</a>
+            <a href="{{ url('/') }}" class="nav-item nav-link">Beranda</a>
+            <a href="#" class="nav-item nav-link">Tentang Kami</a>
+            <div class="dropdown nav-item">
+                <a href="#" class="nav-item nav-link dropdown-toggle" data-bs-toggle="dropdown">Servis</a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Web Design</a>
-                    <a href="#" class="dropdown-item">Web Development</a>
-                    <a href="#" class="dropdown-item">Graphic Design</a>
-                    <a href="#" class="dropdown-item">Digital Marketing</a>
+                    <a href="#" class="dropdown-item">Antar Sampai Rumah</a>
+                    <a href="#" class="dropdown-item">Take Away</a>
+                    <a href="#" class="dropdown-item">Di Tempat Serba Gembira</a>
                 </div>
             </div>
-            <a href="#" class="nav-item nav-link active">Pricing</a>
-            <a href="#" class="nav-item nav-link">Shopping Cart</a>
-            <a href="#" class="nav-item nav-link">Contact</a>
+            <a href="#" class="nav-item nav-link active">Promo</a>
+            <a href="#" class="nav-item nav-link">Keranjang Belanda</a>
+            <a href="#" class="nav-item nav-link">Kontak Kami</a>
         </div>
         <div class="navbar-nav ml-auto action-buttons">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle mr-4">Masuk</a>

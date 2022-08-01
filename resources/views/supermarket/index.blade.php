@@ -5,191 +5,30 @@
 @endsection
 
 @section('content')
-    <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                     data-mdb-ripple-color="light">
-                    <img src="https://id.360buyimg.com/Indonesia/s880x0_/nHBfsgAAOAAAAAYAEXpBgAADEcY.jpg.dpg.webp"
-                         class="w-100" alt="..."/>
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100">
-                                <h5><span class="badge bg-primary ms-2">New</span></h5>
+    @foreach($products->chunk(3) as $productCollection)
+        <div class="row">
+            @foreach($productCollection as $product)
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                             data-mdb-ripple-color="light">
+                            <img src="{{$product->imageLink}}" class="w-100" alt="..."/>
+                        </div>
+                        <div class="card-body">
+                            <a href="" class="text-reset">
+                                <h5 class="card-title mb-3">{{$product->title}}</h5>
+                            </a>
+                            <a href="" class="text-reset">
+                                <p>{{$product->category}}</p>
+                            </a>
+                            <div class="clearfix text-center">
+                                <div class="pull-left price font-weight-bold">Rp{{$product->price}}</div>
+                                <a href="#" class="btn btn-success pull-right" role="button">Beli</a>
                             </div>
                         </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3"> Giordano Kemeja Pria</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Fashion</p>
-                    </a>
-                    <div class="clearfix text-center">
-                        <div class="pull-left price font-weight-bold">Rp629.000</div>
-                        <a href="#" class="btn btn-success pull-right" role="button">Beli</a>
                     </div>
                 </div>
-            </div>
+            @endforeach
         </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                     data-mdb-ripple-color="light">
-                    <img src="https://img20.jd.id/babel/amZzL3Q3MC81OS8xMTgwNDc1Nzg0Ni82ODQwNy8yYzEwODg2Yi82MTNmMjE5ME5jNzQyNTE5OQ.jpg.webp"
-                         class="w-100" />
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100">
-                                <h5><span class="badge bg-success ms-2">Eco</span></h5>
-                            </div>
-                        </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Martin Versa Tas Ransel TR14</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Olahraga & Lifestyle</p>
-                    </a>
-                    <h6 class="mb-3">$61.99</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/shoes%20(3).webp"
-                         class="w-100" />
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100">
-                                <h5><span class="badge bg-danger ms-2">-10%</span></h5>
-                            </div>
-                        </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Category</p>
-                    </a>
-                    <h6 class="mb-3">
-                        <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(23).webp"
-                         class="w-100" />
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100">
-                                <h5>
-                                    <span class="badge bg-success ms-2">Eco</span><span
-                                        class="badge bg-danger ms-2">-10%</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Category</p>
-                    </a>
-                    <h6 class="mb-3">
-                        <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
-                    </h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
-                     data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(17).webp"
-                         class="w-100" />
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100"></div>
-                        </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Category</p>
-                    </a>
-                    <h6 class="mb-3">$61.99</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-                <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/img%20(30).webp"
-                         class="w-100" />
-                    <a href="#!">
-                        <div class="mask">
-                            <div class="d-flex justify-content-start align-items-end h-100">
-                                <h5>
-                                    <span class="badge bg-primary ms-2">New</span><span
-                                        class="badge bg-success ms-2">Eco</span><span class="badge bg-danger ms-2">-10%</span>
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="hover-overlay">
-                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <a href="" class="text-reset">
-                        <h5 class="card-title mb-3">Product name</h5>
-                    </a>
-                    <a href="" class="text-reset">
-                        <p>Category</p>
-                    </a>
-                    <h6 class="mb-3">
-                        <s>$61.99</s><strong class="ms-2 text-danger">$50.99</strong>
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endforeach
 @endsection

@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function(){
-    return view('supermarket.index');
-});
+Route::get('/', [
+    'uses' => 'ProductsController@getIndex',
+    'as' => 'product.index'
+]);

@@ -1,11 +1,12 @@
 # Final Project Oprec MCI 2022
 
 ## Nama Aplikasi
-### Sistem Keranjang Pintar pada Supermarket 
-Aplikasi ini adalah sistem belanja pada supermarket di mana aplikasi ini bertujuan untuk
-mendeteksi barang-barang apa aja yang ada di keranjang. Menggunakan sistem CRUD untuk
-menambah dan mengurangi, serta mengupdate kuantitas barang yg masuk dan menghapus jika
-barang tersebut tidak ada di keranjang.
+### Sistem Keranjang Pintar pada Supermarket atau Mall
+Aplikasi ini adalah sistem belanja pada supermarket di mana aplikasi ini bertujuan untuk melakukan pembelian
+barang di Supermarket besar atau pusat perbelanjaan baik secara online di rumah maupun secara offline di tempat.
+Pada aplikasi ini terdapat fitur menampilkan barang apa saja yang dijual di supermarket. Kemudian fitur User 
+untuk mengetahui barang apa saja yang dibeli dan transaksi riwayat sebelumnya sehingga User dipermudah
+jika mendapatkan promo ataupun diskon dari Akun yang digunakan.
 
 ## Fitur Aplikasi
 List fitur pada aplikasi ini adalah sebagai berikut.
@@ -18,8 +19,14 @@ List fitur pada aplikasi ini adalah sebagai berikut.
 ## Tampilan Aplikasi
 (screenshot fitur aplikasi)
 ### Fitur 1: Melihat semua produk
-![Screenshot (5158)](https://user-images.githubusercontent.com/70510279/176377918-9db84598-a6ac-4856-b6cc-9ae139f3a813.png)
-![Screenshot (5166)](https://user-images.githubusercontent.com/70510279/176378517-412dd0b4-1edf-4720-a58f-22a4e94eb905.png)
+Dalam fitur ini menampilkan semua produk yang dijual di Supermarket atau Mall. Terdapat juga pilihan menu di bagian
+Header (Navbar) seperti Servis, Promo, Kontak Kami, hingga login dan register. Selain itu, setiap produk
+memiliki tampilan gambar dan juga harga serta kategori produk yang dijual sehingga memudahkan User dalam melihat dan 
+memilih.
+
+![Lihat Semua Produk - 1](https://user-images.githubusercontent.com/70510279/182162874-c77783a1-1789-4ac9-b7b0-fe50dabd733a.png)
+![Lihat Semua Produk - 2](https://user-images.githubusercontent.com/70510279/182162360-28755048-0960-42e9-8c93-c805fa454128.png)
+![Lihat Semua Produk - 3](https://user-images.githubusercontent.com/70510279/182162371-509cdf32-b87c-493c-8445-8f528998aaf2.png)
 
 ### Fitur 2: Menambah Produk
 ![Screenshot (5159)](https://user-images.githubusercontent.com/70510279/176377343-e81bd780-7874-40ee-8d04-fab29b345173.png)

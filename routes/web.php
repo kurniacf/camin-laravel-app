@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function(){
-    return view('supermarket.index');
-});
+Route::get('/', [ProductsController::class, 'getIndex']);
 
-/*Route::resource("/products", ProductsController::class);
-Route::get("/products/{id}", [ProductsController::class, 'show']);
-
-Route::get('/users', function () {
-    return 'Welcome to users page';
-});*/
+Route::get('/signup', [UserController::class, 'getSignup']);
+Route::post('/signup', [UserController::class, 'postSignup']);
+Route::get('/login', [UserController::class, 'getLogin']);
+Route::post('/login', [UserController::class, 'postLogin']);
+Route::get('/user/profile', [UserController::class, 'getProfile']);

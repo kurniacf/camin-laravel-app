@@ -231,7 +231,8 @@
         </div>
         <div class="navbar-nav ml-auto action-buttons">
             <a href="{{ url('login') }}" class="nav-link dropdown-toggle mr-4">Masuk</a>
-            <a href="{{ url('signup') }}" class="btn btn-primary sign-up-btn">Daftar</a>
+            <a href="{{ url('register') }}" class="btn btn-primary sign-up-btn">Daftar</a>
+            <a href="{{ url('user/logout') }}" class="btn btn-outline-danger">Keluar</a>
         </div>
     </div>
 </nav>

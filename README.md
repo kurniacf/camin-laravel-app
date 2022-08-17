@@ -28,6 +28,19 @@ memilih.
 ![Lihat Semua Produk - 2](https://user-images.githubusercontent.com/70510279/182162360-28755048-0960-42e9-8c93-c805fa454128.png)
 ![Lihat Semua Produk - 3](https://user-images.githubusercontent.com/70510279/182162371-509cdf32-b87c-493c-8445-8f528998aaf2.png)
 
+### Fitur 2 : Register User
+Dalam fitur ini User bisa melakukan pendaftaran Akun menggunakan Nama, Email, dan Password yang telah
+terenkripsi.
+![Register - 1](https://user-images.githubusercontent.com/70510279/185033718-14f9bad5-b4af-42bb-ae4a-5a77e38350d3.png)
+![Register - 2](https://user-images.githubusercontent.com/70510279/185033721-473293d0-7199-44f8-9719-25d9a22996a9.png)
+![Register - 3](https://user-images.githubusercontent.com/70510279/185033722-67337491-f5e5-46a5-a7b8-021e0474345b.png)
+
+### Fitur 3 : Login User
+Dalam fitur ini User bisa melakukan login Akun dengan akun yang sudah terdaftar di database.
+![Login - 1](https://user-images.githubusercontent.com/70510279/185033805-3d20e56c-5310-4aee-bc36-6c783496528a.png)
+![Login - 2](https://user-images.githubusercontent.com/70510279/185033808-1b96f46d-ff04-4e8c-9fb9-4e6db194a07c.png)
+
+
 ### Fitur 2: Menambah Produk
 ![Screenshot (5159)](https://user-images.githubusercontent.com/70510279/176377343-e81bd780-7874-40ee-8d04-fab29b345173.png)
 
